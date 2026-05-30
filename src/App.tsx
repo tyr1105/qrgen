@@ -258,8 +258,52 @@ function App() {
         </div>
       </main>
 
-      <footer className="mt-8 py-6 text-center text-sm text-gray-400 border-t border-gray-200">
-        <p>QR码生成器 · 免费在线二维码制作工具 · 隐私安全</p>
+      {/* Tool Network Footer */}
+      <footer className="mt-8 border-t border-gray-200 bg-gray-50">
+        {/* Google AdSense Placeholder */}
+        <div className="max-w-5xl mx-auto px-4 pt-6">
+          <div className="bg-gray-100 border border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-400 text-xs">
+            {"Google AdSense 广告位"}
+          </div>
+        </div>
+
+        {/* Tool Network Links */}
+        <div className="max-w-5xl mx-auto px-4 py-6">
+          <h3 className="text-sm font-semibold text-gray-700 mb-3 text-center">🛠️ Tool Network</h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: 'AI Tools Box', href: 'https://tyr1105.github.io/ai-tools-box/' },
+              { name: 'DevKit Tools', href: 'https://tyr1105.github.io/devkit-tools/' },
+              { name: 'PicTool', href: 'https://tyr1105.github.io/pictool/' },
+              { name: 'QRGen', href: 'https://tyr1105.github.io/qrgen/' },
+              { name: 'RedCover', href: 'https://tyr1105.github.io/redcover/' },
+              { name: 'ResumeCraft', href: 'https://tyr1105.github.io/resumecraft/' },
+              { name: 'ShotPro', href: 'https://tyr1105.github.io/shotpro/' },
+              { name: 'WriteBoom', href: 'https://tyr1105.github.io/writeboom/' },
+              { name: 'PDFKit', href: 'https://tyr1105.github.io/pdfkit/' },
+            ].map(tool => (
+              <a
+                key={tool.name}
+                href={tool.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-1.5 bg-white rounded-full border border-gray-200 text-xs text-gray-600 hover:text-emerald-600 hover:border-emerald-300 transition-colors"
+              >
+                {tool.name}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* 支持作者 */}
+        <div className="max-w-5xl mx-auto px-4 pb-6 text-center">
+          <p className="text-sm text-gray-500 mb-2">☕ 支持作者</p>
+          <p className="text-xs text-gray-400">如果这些工具对你有帮助，欢迎分享给朋友或 Star 支持！</p>
+        </div>
+
+        <div className="border-t border-gray-200 py-4 text-center text-xs text-gray-400">
+          QR码生成器 · 免费在线二维码制作工具 · 隐私安全
+        </div>
       </footer>
 
       <canvas ref={canvasRef} className="hidden" />
