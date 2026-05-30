@@ -1,73 +1,34 @@
-# React + TypeScript + Vite
+# 📱 QRGen - 免费在线二维码生成器
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3 align="center">支持Logo · 颜色自定义 · 渐变色 · 高清导出</h3>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="https://tyr1105.github.io/qrgen/">
+    <img src="https://img.shields.io/badge/在线使用-Live_Demo-orange?style=for-the-badge" alt="Live Demo">
+  </a>
+  <img src="https://img.shields.io/badge/价格-免费-green?style=for-the-badge" alt="Free">
+  <img src="https://img.shields.io/badge/无需注册-blue?style=for-the-badge" alt="No Signup">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ 功能特色
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎨 **自定义样式** — 颜色、渐变、圆角等
+- 🖼️ **嵌入Logo** — 在二维码中心添加Logo
+- 📐 **多种尺寸** — 支持高清PNG/SVG导出
+- 🔗 **多种类型** — 网址/文本/邮箱/电话/WiFi
+- 🚫 **无需注册** — 打开即用，零门槛
+- 💰 **完全免费** — 不限次数
 
-## Expanding the ESLint configuration
+## 🚀 立即使用
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👉 https://tyr1105.github.io/qrgen/
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ 技术栈
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+React · TypeScript · qrcode.js · Tailwind CSS
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<p align="center">Made with ❤️ by <a href="https://github.com/tyr1105">tyr1105</a></p>
